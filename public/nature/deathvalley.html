@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Death Valley National Park</title>
+
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+
+        <!--style-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--Header-->
+        <div class="brand brandDeathValley">
+            <p id="brandname">Nature in California</p>
+        </div>
+
+        <!-- Navigation bar -->
+        <div class="mainnav">   
+            <!-- Dropdown-->
+            <div class="dropdown">
+                <button class="dropbtn">National Parks <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="index.html">All National Parks</a>
+                    <a href="redwood.html">Redwood</a>
+                    <a href="lassen.html">Lassen Volcanic</a>
+                    <a href="yosemite.html">Yosemite</a>
+                    <a href="pinnacles.html">Pinnacles</a>
+                    <a href="kingscanyon.html">Kings Canyon</a>
+                    <a href="sequoia.html">Sequoia</a>
+                    <a href="channelislands.html">Channel Islands</a>
+                    <a href="deathvalley.html">Death Valley</a>
+                    <a href="joshuatree.html">Joshua Tree</a>
+                </div>
+            </div>
+            <a class="home" href="index.html">Home</a>
+            <a class="contact" href="#contactsection">Contact</a>
+        </div>   
+
+        <!--Picture Gallery of NP-->
+        <section>
+            <article>
+                <!--Name of NP-->
+                <div>
+                    <h1 id="title-section">Death Valley National Park</h1>
+                </div>            
+                <!--Images-->
+                <div id="DeathValley" class="container">        
+                    <img src="images/DeathValley1.jpg" alt="Death Valley NP"> 
+                    <img src="images/DeathValley2.jpg" alt="Death Valley NP"> 
+                    <img src="images/DeathValley3.jpg" alt="Death Valley NP"> 
+                    <img src="images/DeathValley4.jpg" alt="Death Valley NP"> 
+                    <img src="images/DeathValley5.jpg" alt="Death Valley NP"> 
+                    <img src="images/DeathValley6.jpg" alt="Death Valley NP"> 
+                    <img src="images/DeathValley7.jpg" alt="Death Valley NP"> 
+                    <img src="images/DeathValley8.jpg" alt="Death Valley NP"> 
+                    <img src="images/DeathValley9.jpg" alt="Death Valley NP">
+                    <img src="images/DeathValley10.jpg" alt="Death Valley NP"> 
+                    <img src="images/DeathValley11.jpg" alt="Death Valley NP"> 
+                    <img src="images/DeathValley12.jpg" alt="Death Valley NP">
+                </div> 
+
+                <!--Photo credit-->
+                <div class="more">
+                    <p>Photographs by <a  href="mailto:natallia.developer@gmail.com" target="_blank"><span class="nplink">Natallia Akulenka</span></a></p>
+                </div>              
+
+                <!--Map of NP-->
+                <div class="npmap">
+                    <h3>Map of Death Valley National Park</h3>
+                    <p id="GoogleMaps2"></p>  
+
+                    <!--Link to NPS-->
+                    <div class="more">
+                        <p>For more information visit the official website of <a  href="https://www.nps.gov/deva/index.htm" target="_blank"><span class="nplink">Death Valley National Park</span></a>.</p>
+                    </div>   
+                </div>
+            </article>
+        </section>
+
+        <!--Contact-->
+        <div id="contactsection">
+            <!--title-section-->
+            <div class="title-section"> 
+                <h1>Contact</h1>
+            </div>
+            <!--Contact details-->
+            <div id="email">                <p>natallia.developer@gmail.com</p>
+            </div>
+            <!--Contact icons-->
+            <div>
+                <a href="mailto:natallia.developer@gmail.com" target="_blank"><i class="fa fa-envelope media-icon-contact"></i></a>
+                <a href="http://linkedin.com/in/natallia-akulenka" target="_blank">
+                    <i class="fa fa-linkedin media-icon-contact"></i></a> 
+                <a href="http://github.com/NatalliaA" target="_blank"><i class="fa fa-github media-icon-contact"></i>
+                </a>  
+            </div>
+        </div> 
+
+        <!--Footer-->
+        <footer>
+            <p>&copy; 2020 Natallia Akulenka</p>
+        </footer>
+
+        <!--JavaScript for Google Maps API-->
+        <script>
+
+            //map
+            var map;
+            //NP location
+            var coordinates;
+            var park;
+
+            // Initialize and add the map
+            function initMap (){
+
+                //NP coordinates
+                coordinates = {lat: 36.5,lng: -116.9};
+                park = "Death Valley";
+
+                //set mapOptions      
+                var mapOptions = {
+                    center: coordinates,
+                    zoom: 6,
+                    mapTypeId: 'terrain'
+                };          
+
+                map = new google.maps.Map(document.getElementById('GoogleMaps2'), mapOptions); 
+
+                //create a marker on the map
+                var marker = new google.maps.Marker({
+                    position: coordinates,
+                    map: map,
+                    icon: {
+                        url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+                        labelOrigin: new google.maps.Point(15, -7),
+                        size: new google.maps.Size(35,35)
+                    },
+                    label: {
+                        text: park,
+                        color: "black",
+                        fontSize: "14px",
+                        fontWeight: "bold"
+                    }
+                });
+
+                //create info window    
+                var infoWindow = new google.maps.InfoWindow();
+
+                //open info window on mouse click      
+                google.maps.event.addListener(marker, 'click', function(e){
+
+                    //show the park picture in the infowindow
+                    infoWindow.setContent('<div><p style="font-size:16px; font-weight:bold">Address:</p><p style="font-size:14px">Death Valley NP</br>CA-190</br>Death Valley, CA 92328</p></div>');
+                    infoWindow.open(map,this);
+                });
+            } 
+        </script>
+
+        <!--Google Maps API-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0bLHuAjMs9D1YZycPanF7HIzXnn9JP5k&libraries=places&callback=initMap" async defer></script>
+
+    </body>
+</html>

@@ -1,0 +1,324 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: rgba(230,235,242, 0.3);
+}
+
+/*header*/
+nav{
+    background-color:#0e3b85;
+}
+.navbar-brand {
+    float:none;
+    text-align: center;
+    font-size: 1.5em;   
+}
+.jumbotron{
+    background: url(images/SouthAmerica.JPG) 100%;
+    background-size: cover;  
+    height: 14em;
+    border-radius: 0;
+}
+
+/*main part*/
+.lesson{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #0e3b85;
+    text-align: left;
+}
+.card{
+    border: 1.3px solid #0e3b85;
+}
+.card-body{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.card-text{
+    margin-top: 2em;
+}
+.card-header{
+    background-color: aliceblue;
+}
+
+.readcard, .videocard, .researchcard{
+    padding: 1em;
+}
+.photoscard{
+    padding: 1em 1em 0 1em;
+}
+p.credit{
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 0.8em;
+    text-align: left;
+}
+.instruction{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: #0e3b85;
+}
+.instructionicon{
+    width: 2em;
+}
+a{
+    color: #1458ea; 
+}
+
+/*carousel*/
+.carousel-inner img{
+    width: 100%;
+    border-radius: 1%;
+}
+
+/*quiz*/
+#board{
+    position: relative;    
+}
+#gameover{
+    position:absolute;
+    background-color: aliceblue;
+    background-color:#0e3b85;
+    color:white;
+    height: 70%;
+    width: 90%;
+    top:15%;
+    left: 5%;
+    padding-top: 3.5em;     
+    z-index: 99;
+    border-radius: 2%;
+    display: none;
+    font-size: 1.5em;
+}
+#gameover p{
+    margin-bottom: 2em;
+}
+#gameover span{
+    color: #7ceb37;
+}
+.country{
+    color: white;
+    width: 70%;    
+    margin: 1em auto;
+    height: 3.5em;
+    line-height: 3.5em;    
+    background-color: #0b54a2;
+    border-radius: 2%;
+    font-size: 2em;    
+}
+#scorenumber{
+    background-color: #623983;
+    color: white;
+    position: absolute;
+    padding: 0.2em;
+    width: 5em;
+    top: 15%;
+    left: 70%;
+    z-index: 88;
+    border-radius: 10%;
+    display:none;   
+}
+#true{
+    position: absolute;
+    background-color: #1a6f49;
+    color: white;
+    padding: 0.2em;
+    width: 5em;
+    top: 23%;
+    left: 70%;
+    z-index: 90;
+    border-radius: 10%;
+    display:none;
+}
+#wrong{
+    position: absolute;
+    background-color: #b11a1f;
+    color: white;
+    padding: 0.2em;
+    width: 5em;
+    top:23%;
+    left: 70%;
+    z-index: 90;
+    border-radius: 10%;
+    display:none;
+}
+.btnstart{
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1em;
+}
+.btnexit{
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1em;
+    display: none;
+}
+.btncustom{
+    width: 10em;
+    height: 3em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+.btn-info:active, .btn-info:focus, .btn-success:active, .btn-success:focus, .btn-danger:active, .btn-danger:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+.map{
+    margin-bottom: 0.4em;
+    padding: 0;
+    width: 1.8em;
+    height: 1.8em;    
+}
+img{
+    padding: 0;
+    margin: 0;
+}
+/*color converter: https://codepen.io/sosuke/pen/Pjoqqp*/
+.redmap{
+    filter: invert(54%) sepia(97%) saturate(2973%) hue-rotate(333deg) brightness(104%) contrast(101%);
+    width: 1.8em;
+    height: 1.8em;         
+}
+.greenmap{
+    filter: invert(41%) sepia(98%) saturate(439%) hue-rotate(70deg) brightness(86%) contrast(90%);
+    width: 1.8em;
+    height: 1.8em;  
+}
+
+/*Footer*/
+.footer{
+    background-color:#0e3b85;
+    color: white;
+    text-align: center;
+    padding: 1em 0 0.2em 0;
+    margin-top: 4em;   
+}
+.footer a{
+    color: white;
+}
+#icons8{
+    font-size: 0.8em;
+}
+
+/*Email Icon*/
+.media-icon-contact{
+    font-size: 1.5em;  
+    color: white;
+    margin-left:0.5em;
+    border: 0.1em solid white;
+    border-radius: 60%;
+    padding: 0.3em;    
+}
+a:hover .media-icon-contact{
+    color: 	#0e3b85;
+    background-color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+    /*quiz*/
+    .quiz-body{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        position: relative;
+    }
+    h3{
+        padding-top: 0; 
+        margin-top: 0;
+        margin-bottom: 0.5em;       
+    }
+    #gameover{
+        position:absolute;       
+        height: 75%;
+        width: 90%;
+        top: 1em;
+        left: 5%;
+        padding-top: 2.5em;         
+        font-size: 1.4em;
+    }
+    #gameover p{
+        margin-bottom: 1em;
+    }
+    #gameover span{
+        color: #7ceb37;
+    }
+    .country{       
+        width: 70%;    
+        margin: 1.5em auto 1em auto;
+        height: 2em;
+        line-height: 2em; 
+        border-radius: 2%;
+        font-size: 1.6em;        
+    }
+    #scorenumber{        
+        position: absolute;
+        padding: 0.1em 0.2em;
+        width: 5em;
+        top: 1em;
+        left: 73%;       
+    }
+    #true{
+        position: absolute;      
+        padding: 0.1em 0.2em;
+        width: 5em;
+        top: 3.5em;
+        left: 73%;       
+    }
+    #wrong{
+        position: absolute;       
+        padding: 0.1em 0.2em;
+        width: 5em;
+        top: 3.5em;
+        left: 73%;       
+    }
+    .btncustom{
+        width: 10em;
+        height: 2.5em;       
+        margin-bottom: 1em;
+        font-size: 1em;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    .btnstart{
+        margin-top: 2em;
+        margin-bottom: 1em; 
+        padding: 0.2em 0.6em;
+    }
+    .btnexit{
+        margin-top: 2em;
+        margin-bottom: 1em;  
+        padding: 0.2em 0.6em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .jumbotron{
+        height: 17em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    .jumbotron{
+        height: 22em;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+    .jumbotron{
+        height: 26em;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+    .jumbotron{
+        height: 31em;
+    }
+} 

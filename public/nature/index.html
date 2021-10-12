@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>National Parks in California</title>
+
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+
+        <!--style-->
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+
+        <!--Facebook API-->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script> 
+
+        <!--Header-->
+        <div class="brand">
+            <p id="brandname">Nature in California</p>
+        </div>
+
+        <!--Navigation Bar-->
+        <div class="mainnav">
+            <div class="dropdown">
+                <button class="dropbtn">National Parks <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="index.html">All National Parks</a>
+                    <a href="redwood.html">Redwood</a>
+                    <a href="lassen.html">Lassen Volcanic</a>
+                    <a href="yosemite.html">Yosemite</a>
+                    <a href="pinnacles.html">Pinnacles</a>
+                    <a href="kingscanyon.html">Kings Canyon</a>
+                    <a href="sequoia.html">Sequoia</a>
+                    <a href="channelislands.html">Channel Islands</a>
+                    <a href="deathvalley.html">Death Valley</a>
+                    <a href="joshuatree.html">Joshua Tree</a>
+                </div>
+            </div>
+            <a class="home" href="index.html">Home</a>
+            <a class="contact" href="#contactsection">Contact</a>
+        </div>
+        <section>
+            <article>
+
+                <!-- title-section -->
+                <div class="info">
+                    <h1 id="title-section">National Parks in California</h1>
+
+                    <p>Are you looking for inspiring outdoor destinations in California? The Golden State is home to nine national parks and offers an amazing variety of iconic natural attractions. Check out our picture gallery to get some ideas for your next adventure in this beautiful state.</p>     
+                </div>               
+
+                <!--Map with all NP-->
+                <div class="allnpmap">
+                    <h3>Map of National Parks in CA</h3>
+                    <p id="GoogleMaps"></p>    
+                </div>
+
+                <!--List of national parks-->
+                <div id="parklist" class="container">
+                    <div id="Redwood" class="imgbox">
+                        <a href="redwood.html">
+                            <h2 class="parkName">Redwood</h2><img src="images/Redwood1.jpg" alt="Redwood NP"></a>
+                    </div>
+                    <div id="Lassen" class="imgbox">
+                        <a href="lassen.html">
+                            <h2 class="parkName">Lassen Volcanic</h2>
+                            <img src="images/Lassen5.jpg" alt="Lassen NP">
+                        </a>
+                    </div>
+                    <div id="Yosemite" class="imgbox">
+                        <a href="yosemite.html">
+                            <h2 class="parkName">Yosemite</h2>
+                            <img src="images/Yosemite3.jpg" alt="Yosemite NP">
+                        </a>
+                    </div>
+                    <div id="Pinnacles" class="imgbox">
+                        <a href="pinnacles.html">
+                            <h2 class="parkName">Pinnacles</h2>
+                            <img src="images/Pinnacles1.jpg" alt="Pinnacles NP">
+                        </a>
+                    </div>
+                    <div id="KingsCanyon" class="imgbox">
+                        <a href="kingscanyon.html">
+                            <h2 class="parkName">Kings Canyon</h2>
+                            <img src="images/KingsCanyon3.jpg" alt="Kings Canyon NP">
+                        </a>
+                    </div>
+                    <div id="Sequoia" class="imgbox">
+                        <a href="sequoia.html">
+                            <h2 class="parkName">Sequoia</h2>
+                            <img src="images/Sequoia12.jpg" alt="Sequoia NP"> 
+                        </a>
+                    </div>
+                    <div id="ChannelIslands" class="imgbox">
+                        <a href="channelislands.html">
+                            <h2 class="parkName">Channel Islands</h2>
+                            <img src="images/ChannelIslands1.jpg" alt="Channel Islands NP">
+                        </a>
+                    </div>
+                    <div id="DeathValley" class="imgbox">
+                        <a href="deathvalley.html">
+                            <h2 class="parkName">Death Valley</h2>
+                            <img src="images/DeathValley1.jpg" alt="Death Valley NP"> 
+                        </a>
+                    </div>
+                    <div id="JoshuaTree" class="imgbox">
+                        <a href="joshuatree.html">
+                            <h2 class="parkName">Joshua Tree</h2>
+                            <img src="images/JoshuaTree1.jpg" alt="Joshua Tree NP">  
+                        </a>
+                    </div> 
+                </div> 
+
+                <!--Photo credit-->
+                <div class="more">
+                    <p>Photographs by <a  href="mailto:natallia.developer@gmail.com" target="_blank"><span class="nplink">Natallia Akulenka</span></a></p>
+                </div>  
+
+                <!--Twitter timeline -->
+                <div class="timeline">
+
+                    <!--Facebook button-->
+                    <div class="facebookbtn">  
+                        <div class="fb-like" data-href="https://natureincalifornia.com" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+                    </div>
+
+                    <!--Twitter button-->
+                    <div class="tweetbtn">  
+                        <a class="twitter-share-button" data-size="large" 
+                           href="https://twitter.com/intent/tweet?text=Nature in California">
+                            Tweet</a>
+                    </div>  
+                       <a class="twitter-timeline" data-lang="en" data-width="400" data-height="450" 
+                     href="https://twitter.com/NatlParkService">
+                        Tweets by National Park Srvice</a> 
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+                        </script>
+                </div>  
+            </article>
+        </section>
+
+        <!--Contact-->
+        <div id="contactsection">
+            <!--title-section-->
+            <div class="title-section"> 
+                <h1>Contact</h1>
+            </div>
+            <!--contact details-->
+            <div id="email">                
+                <p>natallia.developer@gmail.com</p>
+            </div>
+            <!--contact icons-->
+            <div>
+                <a href="mailto:natallia.developer@gmail.com" target="_blank"><i class="fa fa-envelope media-icon-contact"></i></a>
+                <a href="http://linkedin.com/in/natallia-akulenka" target="_blank">
+                    <i class="fa fa-linkedin media-icon-contact"></i></a>  
+                <a href="http://github.com/NatalliaA" target="_blank">        
+                    <i class="fa fa-github media-icon-contact"></i>
+                </a>  
+            </div>
+        </div> 
+
+        <!--Footer-->
+        <footer>
+            <p>&copy; 2020 Natallia Akulenka</p>
+        </footer>
+
+        <!--JavaScript for Google Maps API-->
+        <script>
+
+            //create map
+            var map;
+            //location
+            var coordinates;          
+
+            // Initialize and add the map
+            function initMap (){
+
+                //CA center coordinates
+                coordinates = {lat:38.5,lng: -119.5};  
+
+                //set mapOptions      
+                var mapOptions = {
+                    center: coordinates,
+                    zoom: 5.5,
+                    mapTypeId: 'terrain'
+                };          
+
+                map = new google.maps.Map(document.getElementById('GoogleMaps'), mapOptions); 
+
+                var markers=[
+                    { 
+                        "text": "Redwood",
+                        "picture": "images/Redwood9.jpg",
+                        "lat": 41.2,  
+                        "lng": -124,
+                        "url":"#Redwood"       
+                    },
+
+                    {
+                        "text": "Lassen Volcanic",
+                        "picture": "images/Lassen10.jpg",    
+                        "lat": 40.5,  
+                        "lng": -120.7,
+                        "url":"#Lassen"     
+                    },
+
+                    {
+                        "text": "Yosemite",  "picture":"images/Yosemite1.jpg",    
+                        "lat": 37.8,  
+                        "lng": -119.5,
+                        "url":"#Yosemite"
+                    }, 
+
+                    {
+                        "text": "Pinnacles", "picture":"images/Pinnacles9.jpg",    
+                        "lat": 36.4,  
+                        "lng":  -121.1,
+                        "url":"#Pinnacles"    
+                    },
+
+                    {
+                        "text": "Kings Canyon", "picture":"images/KingsCanyon1.jpg",    
+                        "lat": 36.8,  
+                        "lng":  -118.5,
+                        "url":"#KingsCanyon" 
+                    },
+
+                    {
+                        "text": "Sequoia",   "picture":"images/Sequoia10.jpg",    
+                        "lat": 36.3,  
+                        "lng":  -118.5,
+                        "url":"#Sequoia" 
+                    },
+
+                    {
+                        "text": "Channel Islands", "picture":"images/ChannelIslands5.jpg",    
+                        "lat": 34.0,  
+                        "lng":  -119.7,
+                        "url":"#ChannelIslands"       
+                    },
+
+                    {
+                        "text": 'Death Valley',
+                        "picture": "images/DeathValley9.jpg",
+                        "lat": 36.5,  
+                        "lng": -116.9,
+                        "url":"#DeathValley"       
+                    },       
+
+                    {     
+                        "text": "Joshua Tree", "picture":"images/JoshuaTree12.jpg",    
+                        "lat": 33.8,  
+                        "lng":  -115.9,   
+                        "url": '#JoshuaTree'
+                    }
+                ];  
+
+                var infoWindow = new google.maps.InfoWindow();
+
+                //link markers with infowindows and pictures 
+                for(var i=0; i < markers.length; i++){
+                    var data = markers[i];
+                    var marker = new google.maps.Marker({
+                        position: {lat:data.lat, lng: data.lng},
+                        name: data.text,
+                        picture: data.picture,
+                        map: map,
+                        icon: {
+                            url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+                            labelOrigin: new google.maps.Point(15, -5),
+                            size: new google.maps.Size(35,35)
+                        },
+                        label: {
+                            text: data.text,
+                            color: "black",
+                            fontSize: "10px",
+                            fontWeight: "bold"
+                        }
+                    });
+                    var currtitle= markers[i].title;
+
+                    google.maps.event.addListener(marker, 'click', function(e){
+                        //show the park picture in the infowindow
+                        infoWindow.setContent('<img style="height:150px" src='+this.picture+'>');
+                        infoWindow.open(map,this);
+                    });
+                }    
+            }              
+        </script>     
+
+        <!--Google Maps API-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0bLHuAjMs9D1YZycPanF7HIzXnn9JP5k&libraries=places&callback=initMap" async defer></script>
+
+        <!--Twitter JS-->
+
+        <script>window.twttr = (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                    t = window.twttr || {};
+                if (d.getElementById(id)) return t;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+
+                t._e = [];
+                t.ready = function(f) {
+                    t._e.push(f);
+                };
+
+                return t;
+            }(document, "script", "twitter-wjs"));
+        </script>    
+
+    </body>
+</html>
