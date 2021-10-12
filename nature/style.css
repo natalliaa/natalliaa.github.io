@@ -1,0 +1,386 @@
+/*SCC Grid: dimensions of any box includes its padding and border for an easy way of sizing the elements*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Hind', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/*header*/
+div.brand{
+    background-image: url(images/KingsCanyon2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;  
+    text-align: center;
+    line-height: 350px;
+}
+div.brandRedwood{
+    background-image: url(images/Redwood10.jpg);
+}
+div.brandChannel{
+    background-image: url(images/ChannelIslands3.jpg);
+}
+div.brandDeathValley{
+    background-image: url(images/DeathValley8.jpg);
+}
+div.brandJoushuaTree{
+    background-image: url(images/JoshuaTree3.jpg);
+}
+div.brandKingsCanyon{
+    background-image: url(images/KingsCanyon5.jpg);
+}
+div.brandLassen{
+    background-image: url(images/Lassen5.jpg);
+}
+div.brandPinnacles{
+    background-image: url(images/Pinnacles6.jpg);
+}
+div.brandSequoia{
+    background-image: url(images/Sequoia8.jpg);    
+}
+div.brandYosemite{
+    background-image: url(images/Yosemite10.jpg);
+}
+#brandname {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white; 
+    letter-spacing: 3px;
+    color: white;
+}
+
+/*navigation bar*/
+.mainnav{
+    overflow: hidden;
+    background-color: seagreen; 
+    padding: 0 5%;
+}
+.mainnav .home{
+    padding-right: 20px;   
+}
+.mainnav a{
+    float: left;
+    color: white;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none; 
+}
+.dropdown{
+    float:left;
+    overflow: hidden;   
+}
+.dropdown .dropbtn {
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    border: none;
+    outline:none;
+    font-size: 24px;
+    padding: 20px 20px 20px 0px;
+    margin:0;
+    text-decoration: none;  
+    text-align:left;   
+}
+.mainnav a:hover, .dropdown:hover .dropbtn{
+    color: rgba(0,0,0,0.7);
+    cursor: pointer;  
+    font-weight: 600;   
+}
+.mainnav a:active{
+    transform: translateY(4px);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: seagreen;
+    z-index: 99;
+    padding-bottom: 5px;
+}
+.dropdown-content a{
+    float: none;
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left; 
+    font-size: 20px;   
+}
+.dropdown-content a:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    font-weight:normal;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/*section*/
+section{
+    padding: 40px 5%;
+}
+h1{
+    font-size: 32px;
+}
+h2{
+    font-size: 24px;
+}
+.np{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+#title-section{
+    margin-bottom: 40px;
+}
+
+p{
+    font-size: 18px;
+}
+
+/*Google Maps with all NP in CA*/
+.allnpmap{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.allnpmap h3{
+    margin-bottom: 10px;
+}
+#GoogleMaps{
+    height: 500px;
+    /* width: 100%; */
+}
+
+/*picture gallery*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 0.7em;
+    align-items: center;    
+}
+.container>img {
+    width: 100%;
+}
+.imgbox>a>img{
+    width:100%;
+}
+.imgbox>a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+}
+.imgbox>a>img:hover{
+    opacity: 0.5;  
+}
+.imgbox>a>img:active{
+    transform: translateY(3px);
+}
+.parkName:hover{
+    color: seagreen;    
+}
+.parkName:active{
+    transform: translateY(3px);
+}
+.parkName{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*social APIs*/
+.timeline{
+    padding-top: 30px;    
+}
+.facebookbtn{
+    margin-bottom: 20px;
+}
+
+/*contact*/
+#contactsection{
+    background-image: linear-gradient(to top, rgba(0,0,0, 0.8), rgba(0,0,0, 0.7));  
+    color: white;
+    text-align:center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+}
+#email{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#email p{
+    font-weight: 400;
+    font-size: 20px;   
+}
+/*icons social media*/
+.media-icon-contact{
+    font-size: 30px;  
+    color: white;
+    margin: 10px;    
+    border: 3px solid white;
+    border-radius: 60%;
+    padding: 10px;  
+}
+a:hover .media-icon-contact{
+    color: 	rgba(0,0,0, 0.8);
+    background-color: white;   
+}
+a:active .media-icon-contact{
+    color: 	rgba(0,0,0, 0.8);
+    background-color: white; 
+}
+
+/*footer*/
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: seagreen;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+/*detail page*/
+/*map*/
+.npmap{
+    margin-top: 40px;     
+}
+#GoogleMaps2{
+    height: 350px;
+    width: 100%;
+}
+.more{
+    margin-top: 20px;    
+}
+.npmap h3{
+    margin-bottom: 10px;
+}
+.nplink{  
+    color: seagreen;
+    font-weight:bold;
+}
+span{
+    display:inline-block;
+}
+
+.nplink:hover{
+    text-decoration-line: underline;
+}
+.nplink:active{
+    transform: translateY(3px);
+}
+.labels{
+    margin-bottom: 50px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+     
+    div.brand{
+        height: 300px;
+        line-height:normal;
+    }
+    #brandname {
+        font-size: 32px;    
+        padding: 100px 20px 0px 20px;
+    }    
+    .mainnav{
+        padding: 0 5%;
+    }
+    .mainnav a{    
+        font-size: 20px;     
+    }
+    .dropdown .dropbtn {
+        font-size: 20px;    
+    }
+    .dropdown-content a{
+        font-size: 18px;   
+    }
+    section{
+        padding: 40px 5%;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px){
+
+    div.brand{
+        height: 400px;
+        line-height: 400px;
+    }
+    #brandname {
+        font-size: 40px;
+    }    
+    .mainnav{
+        padding: 0 7%;
+    }
+    section{
+        padding: 50px 7%;
+    }
+    p{
+        font-size: 20px;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+
+    div.brand{
+        height: 500px;
+        line-height: 500px;
+    }
+    #brandname {
+        font-size: 48px;        
+    }
+    .mainnav{
+        padding: 0 15%;
+    }
+    section{
+        padding: 50px 15%;
+    }
+    p{
+        font-size: 20px;
+    }
+    .npmap{
+        margin: 40px 50% 0 0;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+
+    div.brand{
+        height: 600px;
+        line-height: 600px;            
+    }
+    #brandname {
+        font-size: 50px;      
+    }    
+    .mainnav{
+        padding: 0 15%;
+
+    }
+    section{
+        padding: 50px 15%;
+    }
+    p{
+        font-size: 22px;
+    }
+    .npmap{
+        margin: 40px 50% 0 0;
+    }
+} 
+
+
