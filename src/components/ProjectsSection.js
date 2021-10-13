@@ -50,7 +50,7 @@ const ProjectsSection = () => {
         <Row xs={1} md={2} lg={3} className="justify-content-center row-project-cards g-4">
             {projectsList.map(item => (    
                 <Col className="card-group">           
-                    <Card key={item.id} className="card-project border-0 m-3">
+                    <Card key={item.id} className="card-project m-3">
                           <ProjectCarousel images={item.images} />
                                   <Card.Body className="mt-4">
                                     <Card.Subtitle className="mb-3">{item.subtitle}</Card.Subtitle>

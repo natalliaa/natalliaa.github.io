@@ -65,7 +65,7 @@ img.intro-image {
   margin-top: 2em;
 }
 
-.card-about, .card-skills {
+.card-about, .card-skills, .card-project {
   border: 2px solid rgba(25, 53, 80, 0.3);
   box-shadow: 0.1em 0.2em 0.1em rgba(25, 53, 80, 0.3);
 }
@@ -179,11 +179,15 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   .carousel-control-next-icon {
     margin-right: -1.6em;
   }
-  .card-about, .card-skills {
+  .card-skills {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
   }
-  .card-project {
+  .card-about {
+    margin-bottom: 1em !important;
+    margin-top: 0 !important;
+  }
+   .card-project {
     margin-bottom: 2em !important;
     margin-top: 0 !important;
   }
@@ -215,8 +219,12 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   .carousel-control-next-icon {
     margin-right: -1.6em;
   }
-  .card-about, .card-skills {
+  .card-skills {
     margin-bottom: 0.5em !important;
+  }
+  .card-about {
+    margin-bottom: 1em !important;
+    margin-top: 0 !important;
   }
   .card-project {
     margin-bottom: 2em !important;
@@ -239,6 +247,10 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   }
   .card-about, .card-skills {
     margin-bottom: 0.5em !important;
+  }
+  .card-about {
+    margin-bottom: 1em !important;
+    margin-top: 0 !important;
   }
   .card-project {
     margin-bottom: 2em !important;
