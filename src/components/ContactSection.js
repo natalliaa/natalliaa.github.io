@@ -22,7 +22,7 @@ const ContactSection = () => (
             </div>
         </address>
         <div className="to-top">
-        <a href="#navbar"><FiArrowUp/></a>
+        <a href="#intro"><FiArrowUp/></a>
         </div>
         </Container>
     </section>

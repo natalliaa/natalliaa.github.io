@@ -1,6 +1,7 @@
 body {
   font-size: 20px;
   position: relative;
+  margin-top: 3em;
 }
 
 .btn, .card, .navbar-toggler, .card-img, .card-img-top {
@@ -8,7 +9,7 @@ body {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.65) !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .nav-link {
