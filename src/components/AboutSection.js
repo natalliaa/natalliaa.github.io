@@ -11,7 +11,7 @@ const AboutSection = () => (
         <Row xs={1} md={2} lg={4} className="g-4">
             {aboutDetails.map(item => (
                 <Col key={item.id} className="card-group">
-                    <Card className="card-about">
+                    <Card className="card-about border-0">
                         <Card.Img variant="top" src={item.image} />
                         <Card.Body>
                             <Card.Title className="mt-2 mb-4">{item.title}</Card.Title>

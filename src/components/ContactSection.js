@@ -1,5 +1,6 @@
 import React from 'react';
 import { ImGithub, ImLinkedin, ImMail } from 'react-icons/im';
+import {FiArrowUp} from 'react-icons/fi';
 import SectionHeader from './SectionHeader';
 
 const ContactSection = () => (
@@ -18,6 +19,9 @@ const ContactSection = () => (
                     <ImGithub className="media-icon-contact" /></a>
             </div>
         </address>
+        <div className="to-top">
+        <a href="#navbar"><FiArrowUp/></a>
+        </div>
     </section>
 )
 

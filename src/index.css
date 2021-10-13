@@ -3,6 +3,10 @@ body {
   position: relative;
 }
 
+.btn, .card {
+  border-radius: 0% !important;
+}
+
 .nav-link {
   color: rgba(0, 0, 0, 0.9) !important;
   font-size: 1.1em;
@@ -41,7 +45,8 @@ img.intro-image {
   color: rgba(0, 0, 0, 0.8);
   box-shadow: 0.1em 0.2em 0.1em rgba(25, 53, 80, 0.3);
   border-radius: 4px;
-  padding-bottom: 0.3em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
   margin-left: 2em;
   margin-right: 2em;
   margin-bottom: 1em;
@@ -51,7 +56,8 @@ img.intro-image {
   border-radius: 4px;
   color: rgb(189, 6, 113);
   box-shadow: 0.1em 0.2em 0.1em rgba(52, 64, 55, 0.3);
-  padding-bottom: 0.3em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
   margin-left: 2em;
   margin-right: 2em;
   margin-bottom: 1.5em;
@@ -64,10 +70,11 @@ img.intro-image {
 .card-about, .card-skills, .card-project {
   border: 2px solid rgba(25, 53, 80, 0.3);
   box-shadow: 0.1em 0.2em 0.1em rgba(25, 53, 80, 0.3);
+  margin-top: 1em;
 }
 
 .card-project {
-  margin-bottom: 2em !important;
+  margin-bottom: 4em !important;
 }
 
 .card-subtitle {
@@ -83,11 +90,21 @@ img.intro-image {
   opacity: 0.4;
 }
 
+.project-carousel {
+  padding: 2em;
+}
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
   width: 1.3em;
   height: 1.3em;
   background-repeat: no-repeat;
   /* filter: brightness(0.8) sepia(10) hue-rotate(-75deg) saturate(90) !important; */
+}
+.carousel-control-prev-icon{
+  margin-left: -1.5em;
+}
+.carousel-control-next-icon {
+  margin-right: -1.5em;
 }
 
 .more-projects {
@@ -121,6 +138,19 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.to-top{
+  margin-top: 1em;
+  font-size: 2em;
+}
+
+.to-top a {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.to-top a:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+
 #footer {
   background-color: rgba(25, 53, 80, 0.2);
 }
@@ -151,6 +181,12 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   .card-project {
     margin-bottom: 0 !important;
   }
+  .carousel-control-prev-icon{
+    margin-left: -2em;
+  }
+  .carousel-control-next-icon {
+    margin-right: -2em;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -178,6 +214,12 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   }
   .card-project {
     margin-bottom: 0 !important;
+  }
+  .carousel-control-prev-icon{
+    margin-left: -2em;
+  }
+  .carousel-control-next-icon {
+    margin-right: -2em;
   }
 }
 

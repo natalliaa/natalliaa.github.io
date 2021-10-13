@@ -39,7 +39,7 @@ const ProjectsSection = () => {
     return <section id="projects" className="projects">
         <SectionHeader className="mb-0">PROJECTS</SectionHeader>
         <p>Selected examples of my work</p>
-        <div className="mt-3 mb-5">
+        <div className="mt-3 mb-4">
             {filterButtons.map(item => <Button
                 variant="outline-dark"
                 className="m-1"
@@ -49,7 +49,7 @@ const ProjectsSection = () => {
         <Row xs={1} lg={2} className="justify-content-center row-project-cards g-4">
             {projectsList.map(item => (
                 <Col key={item.id} className="card-group">
-                    <Card className="card-project border-0 g-0">
+                    <Card className="card-project border-0">
                         <Row>
                             <Col md={6}>
                                 <ProjectCarousel images={item.images} />

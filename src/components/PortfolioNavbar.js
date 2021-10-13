@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import { ImGithub, ImLinkedin} from 'react-icons/im';
 
 const PortfolioNavbar = () => (
-    <Navbar collapseOnSelect expand="md">
+    <Navbar id="navbar" collapseOnSelect expand="md">
         <Container>
             <Navbar.Brand href="#intro">
                 <a href="http://linkedin.com/in/natallia-akulenka" target="_blank" rel="noopener noreferrer">

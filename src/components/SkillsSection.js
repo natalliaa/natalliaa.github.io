@@ -9,10 +9,10 @@ import SectionHeader from './SectionHeader';
 const SkillsSection = () => (
     <section id="skills">
         <SectionHeader>SKILLS</SectionHeader>
-        <Row xs={1} md={2} lg={4} className="g-4" className="cards-row">
+        <Row xs={1} md={2} lg={4} className="g-4">
             {skills.map(item => (
                 <Col key={item.id} className="card-group">
-                    <Card className="card-skills border-0">
+                    <Card className="card-skills">
                         <Card.Body>
                             <Card.Title className="mb-3">{item.title}</Card.Title>
                             <Card.Text>
