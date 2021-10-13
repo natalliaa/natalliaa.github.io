@@ -1,5 +1,5 @@
 body {
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
 }
 
@@ -75,7 +75,7 @@ img.intro-image {
 }
 
 .card-technology {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .modal-backdrop {
