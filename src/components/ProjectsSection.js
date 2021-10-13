@@ -55,19 +55,19 @@ const ProjectsSection = () => {
                                 <ProjectCarousel images={item.images} />
                             </Col>
                             <Col md={6}>
-                                <Card.Body className="mt-3">
+                                <Card.Body className="mt-1">
                                     <Card.Subtitle className="mb-3">{item.subtitle}</Card.Subtitle>
                                     <Card.Text>
                                         <p className="mb-3 card-technology">{item.technology}</p>
                                     </Card.Text>
                                     <Button
-                                        className="m-1"
+                                        className="m-1 mb-2"
                                         size="sm"
                                         variant="outline-dark"
                                         href={item.demoLink}
                                         target="_blank" rel="noopener noreferrer">Demo</Button>
                                     <Button
-                                        className="m-1"
+                                        className="m-1 mb-2"
                                         size="sm"
                                         variant="outline-dark"
                                         href={item.codeLink}
@@ -76,7 +76,7 @@ const ProjectsSection = () => {
                                         Code<ImGithub className="icon-viewcode" />
                                     </Button>
                                     <Button
-                                        className="m-1"
+                                        className="m-1 mb-2"
                                         size="sm"
                                         variant="outline-dark"
                                         onClick={() => {
