@@ -30,7 +30,7 @@ section {
   text-align: center;
   width: 15em;
   margin: 0 auto;
-  border-bottom: 2px solid rgba(25, 53, 80, 0.2);
+  border-bottom: 1px solid rgba(25, 53, 80, 0.2);
 }
 
 .btn {
@@ -98,11 +98,11 @@ img.intro-image {
 }
 
 .carousel-control-prev-icon {
-  margin-left: -1.5em;
+  margin-left: -1.2em;
 }
 
 .carousel-control-next-icon {
-  margin-right: -1.5em;
+  margin-right: -1.2em;
 }
 
 .more-projects {
@@ -163,7 +163,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     padding: 3em 1em;
   }
   .divider {
-    width: 10em;
+    width: 8em;
   }
   img.intro-image {
     width: 55%;
@@ -183,7 +183,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     margin-top: 1em;
   }
   .card-project {
-    margin-top: 1em;
+    margin-top: 0.8em;
   }
 }
 
@@ -197,7 +197,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     padding: 3em 1em;
   }
   .divider {
-    width: 10em;
+    width: 9em;
   }
   #intro {
     padding-left: 10%;
@@ -299,7 +299,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     padding-right: 30%;
   }
   .card-project {
-    margin: 1em;
+    margin: 0.5em;
     margin-top: 2em;
   }
 }

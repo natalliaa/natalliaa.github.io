@@ -46,7 +46,7 @@ const ProjectsSection = () => {
                 role="button"
                 onClick={() => filterProjects(item.toLowerCase())}>{item}</Button>)}
         </div>
-        <Row xs={1} md={2} lg={3} className="justify-content-center row-project-cards g-4">
+        <Row xs={1} md={2} xl={3} className="justify-content-center row-project-cards g-4">
             {projectsList.map(item => (    
                 <Col className="card-group">           
                     <Card key={item.id} className="card-project">

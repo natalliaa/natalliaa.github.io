@@ -14,7 +14,7 @@ const AboutSection = () => (
                     <Card className="card-about border-0">
                         <Card.Img variant="top" src={item.image} />
                         <Card.Body>
-                            <Card.Title className="mt-2 mb-4">{item.title}</Card.Title>
+                            <Card.Title className="mt-2 mb-2">{item.title}</Card.Title>
                             <Card.Text>
                                 <p className="mb-1">{item.lineOne}</p>
                                 <p className="mb-1">{item.lineTwo}</p>
