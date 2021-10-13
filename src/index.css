@@ -44,8 +44,8 @@ img.intro-image {
 .my-name {
   color: rgba(0, 0, 0, 0.8);
   box-shadow: 0.1em 0.2em 0.1em rgba(25, 53, 80, 0.3);
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   margin-left: 2em;
   margin-right: 2em;
   margin-bottom: 1em;
@@ -54,11 +54,11 @@ img.intro-image {
 .my-profession {
   color: rgb(189, 6, 113);
   box-shadow: 0.1em 0.2em 0.1em rgba(52, 64, 55, 0.3);
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   margin-left: 2em;
   margin-right: 2em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 
 .intro-message {
@@ -68,6 +68,7 @@ img.intro-image {
 .card-about, .card-skills, .card-project {
   border: 2px solid rgba(25, 53, 80, 0.3);
   box-shadow: 0.1em 0.2em 0.1em rgba(25, 53, 80, 0.3);
+  margin-bottom: 2em !important;
 }
 
 .card-subtitle {
@@ -155,7 +156,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     font-size: 16px;
   }
   section {
-    padding: 3em 0;
+    padding: 3em 0.5em;
   }
   .divider {
     width: 30%;
@@ -172,10 +173,13 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     margin-right: 0;
   }
   .carousel-control-prev-icon{
-    margin-left: -2em;
+    margin-left: -1.8em;
   }
   .carousel-control-next-icon {
-    margin-right: -2em;
+    margin-right: -1.8em;
+  }
+  .card-about, .card-skills, .card-project {
+    margin-bottom: 0.5em !important;
   }
 }
 
@@ -186,7 +190,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     font-size: 16px;
   }
   section {
-    padding: 3em 0;
+    padding: 3em 0.5em;
   }
   .divider {
     width: 30%;
@@ -203,10 +207,13 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     margin-right: 0.2em;
   }
   .carousel-control-prev-icon{
-    margin-left: -2em;
+    margin-left: -1.8em;
   }
   .carousel-control-next-icon {
-    margin-right: -2em;
+    margin-right: -1.8em;
+  }
+  .card-about, .card-skills, .card-project {
+    margin-bottom: 0.5em !important;
   }
 }
 
@@ -225,6 +232,9 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   }
   img.intro-image {
     width: 45%;
+  }
+  .card-about, .card-skills, .card-project {
+    margin-bottom: 0.5em !important;
   }
 }
 
