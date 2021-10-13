@@ -8,8 +8,7 @@ const IntroSection = () => (
     <section id="intro">
          <h2 className="my-name">{name}</h2>
                 <h3 className="my-profession">{profession}</h3>
-        <Image src={image} alt={name} roundedCircle fluid className="intro-image"/>     
-        <h4 className="welcome-text">{welcome}</h4>
+        <Image src={image} alt={name} roundedCircle fluid className="intro-image"/>    
         <p className="intro-message">{message}</p>
     </section>
 );

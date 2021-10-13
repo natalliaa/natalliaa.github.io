@@ -2,8 +2,7 @@ const introDetails = {
     image: "images/natallia.jpg",
     name: "Natallia Akulenka",
     profession: " Web Design & Development",
-    welcome: "Welcome to my portfolio site!",
-    message: "My expertise is in designing and developing responsive and user-friendly web applications and websites. I have a MS in Computer Science and MA in German. Next to my technical competencies, I have great communication skills from my former language teaching career. My other passions include ultramarathons, hiking, and traveling."
+    message: "Hi! I am a junior web developer looking for a new role. My expertise is in designing and developing user-friendly web applications using modern technologies: HTML, CSS, Bootstrap, React, JavaScript, ES6 and Node.js. Next to my technical competencies, I have great communication skills from my former career as a world language teacher. My other passions include ultramarathons, hiking, and traveling. Have a look at some of my projects and if you like them, get in touch with me!"
 };
 
 const skills = [
