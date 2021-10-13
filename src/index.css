@@ -19,7 +19,7 @@ nav.bg-light {
 
 section {
   text-align: center;
-  padding: 5em 4em;
+  padding: 5em 0;
 }
 
 .section-title {
@@ -64,6 +64,10 @@ img.intro-image {
 
 .card-about, .card-skills, .card-project {
   background-color: rgba(148, 156, 248, 0.3) !important;
+}
+
+.card-project{
+  margin-bottom: 2em !important;
 }
 
 .card-title {
@@ -127,7 +131,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     font-size: 16px;
   }
   section {   
-    padding: 3em 0.5em;
+    padding: 3em 0;
   }
   img.intro-image {
     width: 55%;
@@ -148,10 +152,11 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   body {
     font-size: 16px;
   }
-  .projects>.row-cols-lg-3 {
-    padding-right: 2em;
-    padding-left: 2em;
+  
+  section {   
+    padding: 3em 0;
   }
+
   #intro {
     padding-left: 10%;
     padding-right: 10%;
