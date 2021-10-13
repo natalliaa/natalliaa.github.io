@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'react-bootstrap/Image';
 import { introDetails } from '../data';
 
-const { image, name, profession, welcome, message } = introDetails;
+const { image, name, profession, message } = introDetails;
 
 const IntroSection = () => (
     <section id="intro">

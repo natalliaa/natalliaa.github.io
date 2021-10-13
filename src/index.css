@@ -106,7 +106,7 @@ img.intro-image {
 }
 
 .more-projects {
-  margin-top: 1em;
+  margin-top: 3em;
   margin-bottom: 0;
   font-size: 1.2em;
 }
@@ -162,6 +162,9 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   section {
     padding: 3em 1em;
   }
+  .divider {
+    width: 10em;
+  }
   img.intro-image {
     width: 55%;
   }
@@ -173,23 +176,14 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     margin-left: 0;
     margin-right: 0;
   }
-  .carousel-control-prev-icon {
-    margin-left: -1.6em;
-  }
-  .carousel-control-next-icon {
-    margin-right: -1.6em;
-  }
   .card-skills {
-    margin-bottom: 0 !important;
-    margin-top: 0 !important;
+    margin-top: 0;
   }
   .card-about {
-    margin-bottom: 1em !important;
-    margin-top: 0 !important;
+    margin-top: 1em;
   }
-   .card-project {
-    margin-bottom: 2em !important;
-    margin-top: 0 !important;
+  .card-project {
+    margin-top: 1em;
   }
 }
 
@@ -202,6 +196,9 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   section {
     padding: 3em 1em;
   }
+  .divider {
+    width: 10em;
+  }
   #intro {
     padding-left: 10%;
     padding-right: 10%;
@@ -213,22 +210,15 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     margin-left: 0.2em;
     margin-right: 0.2em;
   }
-  .carousel-control-prev-icon {
-    margin-left: -1.6em;
-  }
-  .carousel-control-next-icon {
-    margin-right: -1.6em;
-  }
   .card-skills {
-    margin-bottom: 0.5em !important;
+    margin-top: 0.5em;
   }
   .card-about {
-    margin-bottom: 1em !important;
-    margin-top: 0 !important;
+    margin-top: 1em;
   }
   .card-project {
-    margin-bottom: 2em !important;
-    margin-top: 0 !important;
+    margin: 0.5em;
+    margin-top: 1.5em;
   }
 }
 
@@ -238,6 +228,9 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   body {
     font-size: 18px;
   }
+  .divider {
+    width: 12em;
+  }
   #intro {
     padding-left: 15%;
     padding-right: 15%;
@@ -246,15 +239,14 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     width: 45%;
   }
   .card-about, .card-skills {
-    margin-bottom: 0.5em !important;
+    margin-top: 0.5em;
   }
   .card-about {
-    margin-bottom: 1em !important;
-    margin-top: 0 !important;
+    margin-top: 1em;
   }
   .card-project {
-    margin-bottom: 2em !important;
-    margin-top: 0 !important;
+    margin: 0.5em;
+    margin-top: 1.5em;
   }
 }
 
@@ -263,6 +255,14 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
 @media (min-width: 992px) and (max-width: 1199px) {
   #intro {
     padding-left: 20%;
+  }
+  .card-project {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+  .card-project {
+    margin: 0.5em;
+    margin-top: 2em;
   }
 }
 
@@ -277,6 +277,14 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     padding-left: 25%;
     padding-right: 25%;
   }
+  .card-project {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+  .card-project {
+    margin: 0.5em;
+    margin-top: 2em;
+  }
 }
 
 /* Super Extra large devices (large desktops, 1200px and up) */
@@ -289,5 +297,9 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   #intro {
     padding-left: 30%;
     padding-right: 30%;
+  }
+  .card-project {
+    margin: 1em;
+    margin-top: 2em;
   }
 }

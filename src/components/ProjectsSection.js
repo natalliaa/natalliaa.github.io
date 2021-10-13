@@ -6,7 +6,6 @@ import Button from 'react-bootstrap/Button';
 import ProjectModal from './ProjectModal';
 import SectionHeader from './SectionHeader';
 import ProjectCarousel from './ProjectCarousel'
-import Divider from './Divider';
 import { filterButtons, projects } from '../data';
 import { ImGithub } from 'react-icons/im';
 
@@ -50,21 +49,21 @@ const ProjectsSection = () => {
         <Row xs={1} md={2} lg={3} className="justify-content-center row-project-cards g-4">
             {projectsList.map(item => (    
                 <Col className="card-group">           
-                    <Card key={item.id} className="card-project m-3">
+                    <Card key={item.id} className="card-project">
                           <ProjectCarousel images={item.images} />
-                                  <Card.Body className="mt-4">
+                                  <Card.Body className="mt-3">
                                     <Card.Subtitle className="mb-3">{item.subtitle}</Card.Subtitle>
                                     <Card.Text>
                                         <p className="mb-3 card-technology">{item.technology}</p>
                                     </Card.Text>
                                     <Button
-                                        className="m-1 mb-3"
+                                        className="m-1 mb-2"
                                         size="sm"
                                         variant="outline-dark"
                                         href={item.demoLink}
                                         target="_blank" rel="noopener noreferrer">Demo</Button>
                                     <Button
-                                        className="m-1 mb-3"
+                                        className="m-1 mb-2"
                                         size="sm"
                                         variant="outline-dark"
                                         href={item.codeLink}
@@ -73,7 +72,7 @@ const ProjectsSection = () => {
                                         Code<ImGithub className="icon-viewcode" />
                                     </Button>
                                     <Button
-                                        className="m-1 mb-3"
+                                        className="m-1 mb-2"
                                         size="sm"
                                         variant="outline-dark"
                                         onClick={() => {
