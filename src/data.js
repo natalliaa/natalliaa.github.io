@@ -85,7 +85,7 @@ const projects = [
             "images/coding6.jpg"
         ],
         title: "Coding Books",
-        subtitle: "Responsive SPA for searching coding books",
+        subtitle: "Single-page application for filtering books",
         technology: "HTML5 | CSS3 | CSS Grid | React.js | React Hooks",
         description: ["Single-page application implemented with React.js and React Hooks",
             "Navigation bar implemented with React Router",
@@ -104,7 +104,7 @@ const projects = [
             "images/art6.jpg"
         ],
         title: "WeSeeArt",
-        subtitle: "Street art website with user-generated content",
+        subtitle: "Website with user-generated content",
         technology: "HTML5 | CSS3 | Bootstrap | Node.js | Express.js | MongoDB",
         description: ["Server-side implementation with Node.js and Express.js",
             "CRUD operations for user posts and comments",
@@ -122,7 +122,7 @@ const projects = [
             "images/shakes3.jpg"
         ],
         title: "Milkshakes",
-        subtitle: "Responsive webpage for searching milkshakes",
+        subtitle: "Webpage for searching milkshakes",
         technology: "HTML5 | CSS3 | CSS Grid | React.js | REST API",
         description: ["Single-page application implemented with React.js",
             "Framework-free styling and responsive layout with CSS Grid",
@@ -200,7 +200,7 @@ const projects = [
             "images/cities5.jpg"
         ],
         title: "Travel & Learn",
-        subtitle: "Responsive webpage with photos, Google Maps and a distance calculator",
+        subtitle: "Webpage with a distance calculator",
         technology: "HTML5 | CSS3 | CSS Grid | JavaScript | Google Maps API",
         description: ["Framework-free styling and responsive layout with CSS Grid",
             "Distance calculator implemented with jQuery and Google Maps API",
@@ -216,7 +216,7 @@ const projects = [
             "images/qa3.jpg"
         ],
         title: "Q&A",
-        subtitle: "Responsive webpage with Q&A collapsibles",
+        subtitle: "Webpage with Q&A collapsibles",
         technology: "HTML5 | CSS3 | CSS Grid | React.js | React Hooks",
         description: ["Q&A component with React useState hook",
             "Collapsible accordion to show/hide answers",
