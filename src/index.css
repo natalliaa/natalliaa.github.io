@@ -1,5 +1,5 @@
 body {
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -23,12 +23,12 @@ section {
 }
 
 .section-title {
-  margin-bottom: 3em;
+  margin-bottom: 2.5em;
 }
 
 .divider {
   text-align: center;
-  width: 20%;
+  width: 30%;
   margin: 0 auto;
   border-bottom: 1px solid rgba(45, 33, 97, 0.2);
 }
@@ -87,7 +87,7 @@ img.intro-image {
   width: 1.3em;
   height: 1.3em;
   background-repeat: no-repeat;
-  filter: brightness(0.8) sepia(10) hue-rotate(-75deg) saturate(90) !important;
+  /* filter: brightness(0.8) sepia(10) hue-rotate(-75deg) saturate(90) !important; */
 }
 
 .more-projects {
@@ -128,7 +128,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
 
 @media (max-width: 575px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
   section {   
     padding: 3em 0;
@@ -150,7 +150,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
 
 @media (min-width: 576px) and (max-width: 767px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
   
   section {   
@@ -170,7 +170,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
 
 @media (min-width: 768px) and (max-width: 991px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
   #intro {
     padding-left: 15%;
