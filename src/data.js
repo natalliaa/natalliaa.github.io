@@ -140,7 +140,7 @@ const projects = [
             "images/cart4.jpg"
         ],
         title: "Shopping Cart",
-        subtitle: "Responsive page with health classes to add to cart",
+        subtitle: "Responsive shopping cart",
         technology: "HTML5 | CSS3 | CSS Grid | React.js | Redux",
         description: ["Project implemented with React.js and Redux",
             "User can add or remove health classes from the cart",
@@ -180,7 +180,7 @@ const projects = [
             "images/np8.jpg"
         ],
         title: "Nature in California",
-        subtitle: "Responsive photo gallery website of national parks",
+        subtitle: "Responsive photo gallery website",
         technology: "HTML5 | CSS3 | CSS Grid | JavaScript | Google Maps API | Social APIs",
         description: [
             "Framework-free styling and responsive layout with CSS Grid",

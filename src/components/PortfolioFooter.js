@@ -5,7 +5,7 @@ const PortfilioFooter = () => (
     <footer id="footer">
         <Nav className="justify-content-center">
             <Nav.Item>
-                <p className="mt-4 mb-4">&copy; 2021 Natallia Akulenka</p>
+                <p className="mt-4 mb-4">&copy; 2021 Created by Natallia Akulenka</p>
             </Nav.Item>
         </Nav>
     </footer>
