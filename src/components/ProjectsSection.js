@@ -47,16 +47,12 @@ const ProjectsSection = () => {
                 role="button"
                 onClick={() => filterProjects(item.toLowerCase())}>{item}</Button>)}
         </div>
-        <div className="justify-content-center row-project-cards g-4">
-            {projectsList.map(item => (
-                <div>
-                    <Card key={item.id} className="card-project border-0 mt-4">
-                        <Row>
-                            <Col md={6}>
-                                <ProjectCarousel images={item.images} />
-                            </Col>
-                            <Col md={6} className="align-items-center d-flex justify-content-center">
-                                <Card.Body>
+        <Row xs={1} md={2} lg={3} className="justify-content-center row-project-cards g-4">
+            {projectsList.map(item => (    
+                <Col className="card-group">           
+                    <Card key={item.id} className="card-project border-0 m-3">
+                          <ProjectCarousel images={item.images} />
+                                  <Card.Body className="mt-4">
                                     <Card.Subtitle className="mb-3">{item.subtitle}</Card.Subtitle>
                                     <Card.Text>
                                         <p className="mb-3 card-technology">{item.technology}</p>
@@ -85,21 +81,15 @@ const ProjectsSection = () => {
                                             setCurrentProject(item);
                                         }}>Details</Button>
                                 </Card.Body>
-                            </Col>
-                        </Row>
-
                         <ProjectModal
                             show={modalShow}
                             onHide={() => setModalShow(false)}
                             content={currentProject}
                         />
                     </Card>
-                    <div className="divider-project">
-                        <Divider />
-                    </div>
-                </div>
+                    </Col>              
             ))}
-        </div>
+        </Row>
         <p className="more-projects">View more projects
             <a href="https://github.com/NatalliaA" target="_blank" rel="noopener noreferrer">
                 <ImGithub className="icon-contact-small" />
