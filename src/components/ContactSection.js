@@ -2,9 +2,11 @@ import React from 'react';
 import { ImGithub, ImLinkedin, ImMail } from 'react-icons/im';
 import {FiArrowUp} from 'react-icons/fi';
 import SectionHeader from './SectionHeader';
+import { Container } from 'react-bootstrap';
 
 const ContactSection = () => (
     <section id="contact">
+        <Container>
         <SectionHeader>CONTACT</SectionHeader>
         <address>
             <div id="email">
@@ -22,6 +24,7 @@ const ContactSection = () => (
         <div className="to-top">
         <a href="#navbar"><FiArrowUp/></a>
         </div>
+        </Container>
     </section>
 )
 

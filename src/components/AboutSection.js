@@ -2,11 +2,13 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import { Container } from 'react-bootstrap';
 import SectionHeader from './SectionHeader';
 import { aboutDetails } from '../data';
 
 const AboutSection = () => (
     <section id="about">
+        <Container>
         <SectionHeader>ABOUT ME</SectionHeader>
         <Row xs={1} md={2} lg={4} className="g-4">
             {aboutDetails.map(item => (
@@ -25,6 +27,7 @@ const AboutSection = () => (
                 </Col>
             ))}
         </Row>
+        </Container>
     </section>
 );
 

@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import { Container } from 'react-bootstrap';
 import ProjectModal from './ProjectModal';
 import SectionHeader from './SectionHeader';
 import ProjectCarousel from './ProjectCarousel'
@@ -37,6 +38,7 @@ const ProjectsSection = () => {
     };
 
     return <section id="projects" className="projects">
+        <Container>
         <SectionHeader className="mb-0">PROJECTS</SectionHeader>
         <p>Selected examples of my work</p>
         <div className="mt-4 mb-4">
@@ -91,9 +93,10 @@ const ProjectsSection = () => {
         </Row>
         <p className="more-projects">View more projects
             <a href="https://github.com/NatalliaA" target="_blank" rel="noopener noreferrer">
-                <ImGithub className="icon-contact-small" />
+                <ImGithub className="icon-view-more" />
             </a>
         </p>
+        </Container>
     </section>
 };
 
