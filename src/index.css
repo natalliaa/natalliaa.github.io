@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.7) !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .nav-link {
@@ -111,11 +111,11 @@ img.intro-image {
 }
 
 .carousel-control-prev-icon {
-  margin-left: -1.2em;
+  margin-left: -1.1em;
 }
 
 .carousel-control-next-icon {
-  margin-right: -1.2em;
+  margin-right: -1.1em;
 }
 
 .more-projects {
