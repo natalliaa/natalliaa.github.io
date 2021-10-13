@@ -55,8 +55,8 @@ const ProjectsSection = () => {
                                 <ProjectCarousel images={item.images} />
                             </Col>
                             <Col md={6}>
-                                <Card.Body>
-                                    <Card.Subtitle className="mt-4 mb-3">{item.subtitle}</Card.Subtitle>
+                                <Card.Body className="mt-4">
+                                    <Card.Subtitle className="mb-3">{item.subtitle}</Card.Subtitle>
                                     <Card.Text>
                                         <p className="mb-3 card-technology">{item.technology}</p>
                                     </Card.Text>

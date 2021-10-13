@@ -1,5 +1,5 @@
 body {
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
 }
 
@@ -19,7 +19,7 @@ nav.bg-light {
 
 section {
   text-align: center;
-  padding: 5em 0;
+  padding: 5em 0 4em 0;
 }
 
 .section-title {
@@ -64,6 +64,10 @@ img.intro-image {
 
 .card-about, .card-skills, .card-project {
   background-color: rgba(148, 156, 248, 0.3) !important;
+}
+
+.card-project {
+  margin-bottom: 2em !important;
 }
 
 .card-title {
@@ -127,7 +131,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     font-size: 16px;
   }
   section {
-    padding: 3em 0;
+    padding: 3em 0 2em 0;
   }
   img.intro-image {
     width: 55%;
@@ -140,6 +144,9 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     margin-left: 0;
     margin-right: 0;
   }
+  .card-project {
+    margin-bottom: 0 !important;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -149,7 +156,7 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
     font-size: 14px;
   }
   section {
-    padding: 3em 0;
+    padding: 3em 0 2em 0;
   }
   #intro {
     padding-left: 10%;
@@ -161,6 +168,9 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   .my-profession {
     margin-left: 0.2em;
     margin-right: 0.2em;
+  }
+  .card-project {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -176,6 +186,9 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   }
   img.intro-image {
     width: 45%;
+  }
+  .card-project {
+    margin-bottom: 0 !important;
   }
 }
 
