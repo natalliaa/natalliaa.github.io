@@ -61,13 +61,13 @@ const ProjectsSection = () => {
                                         <p className="mb-3 card-technology">{item.technology}</p>
                                     </Card.Text>
                                     <Button
-                                        className="m-1 mb-2"
+                                        className="m-1 mb-3"
                                         size="sm"
                                         variant="outline-dark"
                                         href={item.demoLink}
                                         target="_blank" rel="noopener noreferrer">Demo</Button>
                                     <Button
-                                        className="m-1 mb-2"
+                                        className="m-1 mb-3"
                                         size="sm"
                                         variant="outline-dark"
                                         href={item.codeLink}
@@ -76,7 +76,7 @@ const ProjectsSection = () => {
                                         Code<ImGithub className="icon-viewcode" />
                                     </Button>
                                     <Button
-                                        className="m-1 mb-2"
+                                        className="m-1 mb-3"
                                         size="sm"
                                         variant="outline-dark"
                                         onClick={() => {
