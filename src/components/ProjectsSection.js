@@ -48,15 +48,15 @@ const ProjectsSection = () => {
                 onClick={() => filterProjects(item.toLowerCase())}>{item}</Button>)}
         </div>
         <div className="justify-content-center row-project-cards g-4">
-            {projectsList.map(item => ( 
-                <div>               
-                    <Card key={item.id} className="card-project border-0 mt-5">
+            {projectsList.map(item => (
+                <div>
+                    <Card key={item.id} className="card-project mt-4">
                         <Row>
                             <Col md={6}>
                                 <ProjectCarousel images={item.images} />
                             </Col>
-                            <Col md={6}>
-                                <Card.Body className="mt-1">
+                            <Col md={6} className="align-items-center d-flex justify-content-center">
+                                <Card.Body>
                                     <Card.Subtitle className="mb-3">{item.subtitle}</Card.Subtitle>
                                     <Card.Text>
                                         <p className="mb-3 card-technology">{item.technology}</p>
@@ -87,15 +87,17 @@ const ProjectsSection = () => {
                                 </Card.Body>
                             </Col>
                         </Row>
-                     
+
                         <ProjectModal
-                        show={modalShow}
-                        onHide={() => setModalShow(false)}
-                        content={currentProject}
-                    />  
-                    </Card>    
-                       <Divider/>  
-                       </div>                           
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
+                            content={currentProject}
+                        />
+                    </Card>
+                    <div className="divider-project">
+                        <Divider />
+                    </div>
+                </div>
             ))}
         </div>
         <p className="more-projects">View more projects
