@@ -63,7 +63,7 @@ img.intro-image {
 }
 
 .card-about, .card-skills, .card-project {
-  background-color: rgba(148, 156, 248, 0.15) !important;
+  background-color: rgba(148, 156, 248, 0.3) !important;
 }
 
 .card-title {
@@ -110,7 +110,6 @@ img.intro-image {
 .icon-viewcode {
   margin-left: 0.2em;
   margin-bottom: 0.2em;
-  font-size: 1.2em;
 }
 
 a:hover .media-icon-contact, a:hover .icon-contact-small {

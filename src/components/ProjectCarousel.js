@@ -8,7 +8,7 @@ const ProjectCarousel = props => (
               <img
                 className="d-block w-100"
                 src={item}
-                alt="First slide"
+                alt="Project"
               />
             </Carousel.Item>
         ))}
