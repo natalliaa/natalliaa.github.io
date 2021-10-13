@@ -126,6 +126,9 @@ a:hover .media-icon-contact, a:hover .icon-contact-small {
   body {
     font-size: 16px;
   }
+  section {   
+    padding: 3em 0.5em;
+  }
   img.intro-image {
     width: 55%;
   }

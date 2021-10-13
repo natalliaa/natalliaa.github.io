@@ -74,31 +74,7 @@ const aboutDetails = [
     }
 ];
 
-const projects = [
-    {
-        id: "0",
-        images: [
-            "images/np1.jpg",
-            "images/np2.jpg",
-            "images/np3.jpg",
-            "images/np4.jpg",
-            "images/np5.jpg",
-            "images/np6.jpg",
-            "images/np7.jpg",
-            "images/np8.jpg"
-        ],
-        title: "Nature in California",
-        subtitle: "Responsive photo gallery website of national parks",
-        technology: "HTML5 | CSS3 | CSS Grid | JavaScript | Google Maps API | Social APIs",
-        description: [
-            "Framework-free styling and responsive layout with CSS Grid",
-            "Interactive map displaying park locations and information leveraging Google Maps Platform APIs",
-            "Like and Share buttons of Facebook API",
-            "Tweet button with a timeline of National Park Service updates with Twitter API."
-        ],
-        demoLink: "nature/index.html",
-        codeLink: "https://github.com/NatalliaA/nature-california"
-    },
+const projects = [ 
     {
         id: "1",
         images: [
@@ -140,6 +116,22 @@ const projects = [
         codeLink: "https://github.com/NatalliaA/art-network-node"
     },
     {
+        id: "5",
+        images: [
+            "images/shakes1.jpg",
+            "images/shakes2.jpg",
+            "images/shakes3.jpg"
+        ],
+        title: "Milkshakes",
+        subtitle: "Responsive webpage for searching milkshakes",
+        technology: "HTML5 | CSS3 | CSS Grid | React.js | REST API",
+        description: ["Single-page application implemented with React.js",
+            "Framework-free styling and responsive layout with CSS Grid",
+            "Milkshake data fetched from a third-party API (TheCocktailDB)"],
+        demoLink: "https://natalliaa.github.io/shakes-react",
+        codeLink: "https://github.com/NatalliaA/shakes-react"
+    },
+    {
         id: "3",
         images: [
             "images/cart1.jpg",
@@ -174,22 +166,30 @@ const projects = [
             "Styling with Bootstrap's components (carousel, card, embed, etc.)"],
         demoLink: "school/index.html",
         codeLink: "https://github.com/NatalliaA/NatalliaA.github.io/tree/master/school"
-    },
+    },    
     {
-        id: "5",
+        id: "0",
         images: [
-            "images/shakes1.jpg",
-            "images/shakes2.jpg",
-            "images/shakes3.jpg"
+            "images/np1.jpg",
+            "images/np2.jpg",
+            "images/np3.jpg",
+            "images/np4.jpg",
+            "images/np5.jpg",
+            "images/np6.jpg",
+            "images/np7.jpg",
+            "images/np8.jpg"
         ],
-        title: "Milkshakes",
-        subtitle: "Responsive webpage for searching milkshakes",
-        technology: "HTML5 | CSS3 | CSS Grid | React.js | REST API",
-        description: ["Single-page application implemented with React.js",
+        title: "Nature in California",
+        subtitle: "Responsive photo gallery website of national parks",
+        technology: "HTML5 | CSS3 | CSS Grid | JavaScript | Google Maps API | Social APIs",
+        description: [
             "Framework-free styling and responsive layout with CSS Grid",
-            "Milkshake data fetched from a third-party API (TheCocktailDB)"],
-        demoLink: "https://natalliaa.github.io/shakes-react",
-        codeLink: "https://github.com/NatalliaA/shakes-react"
+            "Interactive map displaying park locations and information leveraging Google Maps Platform APIs",
+            "Like and Share buttons of Facebook API",
+            "Tweet button with a timeline of National Park Service updates with Twitter API."
+        ],
+        demoLink: "nature/index.html",
+        codeLink: "https://github.com/NatalliaA/nature-california"
     },
     {
         id: "6",
