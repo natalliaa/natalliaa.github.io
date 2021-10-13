@@ -6,6 +6,7 @@ import PortfolioFooter from './components/PortfolioFooter';
 import PortfolioNavbar from './components/PortfolioNavbar';
 import ProjectsSection from './components/ProjectsSection';
 import SkillsSection from './components/SkillsSection';
+import Devider from './components/Divider';
 import Container from 'react-bootstrap/Container';
 
 
@@ -16,13 +17,13 @@ const App = () => {
       <main>
         <Container>
         <IntroSection />
-        <div className="divider"/>
+        <Devider/>
         <SkillsSection />
-        <div className="divider"/>
+        <Devider/>
         <ProjectsSection />
-        <div className="divider"/>
+        <Devider/>
         <AboutSection />
-        <div className="divider"/>
+        <Devider/>
         <ContactSection />
         </Container>
       </main>

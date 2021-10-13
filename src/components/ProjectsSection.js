@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import ProjectModal from './ProjectModal';
 import SectionHeader from './SectionHeader';
 import ProjectCarousel from './ProjectCarousel'
+import Divider from './Divider';
 import { filterButtons, projects } from '../data';
 import { ImGithub } from 'react-icons/im';
 
@@ -39,17 +40,17 @@ const ProjectsSection = () => {
     return <section id="projects" className="projects">
         <SectionHeader className="mb-0">PROJECTS</SectionHeader>
         <p>Selected examples of my work</p>
-        <div className="mt-4 mb-5">
+        <div className="mt-4 mb-4">
             {filterButtons.map(item => <Button
                 variant="outline-dark"
-                className="m-1"
+                className="m-1 mb-2"
                 role="button"
                 onClick={() => filterProjects(item.toLowerCase())}>{item}</Button>)}
         </div>
-        <Row xs={1} lg={2} className="justify-content-center row-project-cards g-4">
-            {projectsList.map(item => (
-                <Col key={item.id} className="card-group">
-                    <Card className="card-project border-0">
+        <div className="justify-content-center row-project-cards g-4">
+            {projectsList.map(item => ( 
+                <div>               
+                    <Card key={item.id} className="card-project mt-5">
                         <Row>
                             <Col md={6}>
                                 <ProjectCarousel images={item.images} />
@@ -86,15 +87,17 @@ const ProjectsSection = () => {
                                 </Card.Body>
                             </Col>
                         </Row>
-                    </Card>
-                    <ProjectModal
+                     
+                        <ProjectModal
                         show={modalShow}
                         onHide={() => setModalShow(false)}
                         content={currentProject}
-                    />
-                </Col>
+                    />  
+                    </Card>    
+                       <Divider/>  
+                       </div>                           
             ))}
-        </Row>
+        </div>
         <p className="more-projects">View more projects
             <a href="https://github.com/NatalliaA" target="_blank" rel="noopener noreferrer">
                 <ImGithub className="icon-contact-small" />
