@@ -41,7 +41,7 @@ const ProjectsSection = () => {
         <Container>
         <SectionHeader className="mb-0">PROJECTS</SectionHeader>
         <p>Selected examples of my work</p>
-        <div className="mt-4 mb-4">
+        <div className="mt-5 mb-4">
             {filterButtons.map(item => <Button
                 variant="outline-dark"
                 className="m-1 mb-2"
