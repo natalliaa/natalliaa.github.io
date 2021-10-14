@@ -14,7 +14,7 @@ const skills = [
     {
         id: "1",
         title: "FRONT-END",
-        text: "HTML5 | CSS3 | Bootstrap | JavaScript | ES6 | jQuery | React.js | Third-Party APIs"
+        text: "HTML5 | CSS3 | Bootstrap | JavaScript | ES6 | jQuery | React.js | Unit Tests | APIs"
     },
     {
         id: "2",
