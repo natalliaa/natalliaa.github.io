@@ -5,7 +5,7 @@ const ProjectModal = props => {
     return (
         <Modal
             {...props}
-            size="lg"
+            size="md"
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
@@ -16,7 +16,7 @@ const ProjectModal = props => {
             </Modal.Header>
             <p className="ps-3 mt-0 mb-1 pb-2 border-bottom">{props.content.subtitle}</p>
             <Modal.Body>
-                <h6>{props.content.technology}</h6>
+                <h6 className="modal-technology">{props.content.technology}</h6>
                 <ul className='mt-3'>
                     {props.content.description.map((item, index) => <li key={index}>{item}</li>)}
                 </ul>

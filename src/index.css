@@ -116,7 +116,9 @@ img.intro-image {
 .carousel-control-next-icon {
   margin-right: -1em;
 }
-
+.modal-technology {
+  color: rgb(189, 6, 113);
+}
 .more-projects {
   margin-top: 2em;
   margin-bottom: 0;
