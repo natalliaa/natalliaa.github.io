@@ -69,8 +69,7 @@ img.intro-image {
 .my-profession {
   color: rgb(189, 6, 113);
   box-shadow: 0.1em 0.2em 0.1em rgba(52, 64, 55, 0.3);
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding: 0.5em 0.3em;
   margin-bottom: 2em;
 }
 
@@ -100,7 +99,7 @@ img.intro-image {
 .project-carousel {
   padding-right: 2em;
   padding-left: 2em;
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -111,11 +110,11 @@ img.intro-image {
 }
 
 .carousel-control-prev-icon {
-  margin-left: -1.1em;
+  margin-left: -1em;
 }
 
 .carousel-control-next-icon {
-  margin-right: -1.1em;
+  margin-right: -1em;
 }
 
 .more-projects {
@@ -212,10 +211,6 @@ a:hover .icon-contact-small {
   }
   img.intro-image {
     width: 50%;
-  }
-  .my-profession {
-    margin-left: 0.2em;
-    margin-right: 0.2em;
   }
   .card-skills {
     margin-top: 0.5em;
