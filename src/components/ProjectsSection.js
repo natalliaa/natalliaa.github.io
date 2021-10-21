@@ -39,31 +39,33 @@ const ProjectsSection = () => {
 
     return <section id="projects" className="projects">
         <Container>
-        <SectionHeader className="mb-0">PROJECTS</SectionHeader>
-        <p>Selected examples of my work</p>
-        <div className="mt-5 mb-4">
-            {filterButtons.map(item => <Button
-                variant="outline-dark"
-                className="m-1 mb-2"
-                role="button"
-                onClick={() => filterProjects(item.toLowerCase())}>{item}</Button>)}
-        </div>
-        <Row xs={1} md={2} xl={3} className="justify-content-center row-project-cards g-4">
-            {projectsList.map(item => (    
-                <Col className="card-group">           
-                    <Card key={item.id} className="card-project">
-                          <ProjectCarousel images={item.images} />
-                                  <Card.Body className="mt-3">
-                                    <Card.Subtitle className="mb-3">{item.subtitle}</Card.Subtitle>
-                                    <Card.Text>
-                                        <p className="mb-3 card-technology">{item.technology}</p>
-                                    </Card.Text>
+            <SectionHeader className="mb-0">PROJECTS</SectionHeader>
+            <p>Selected examples of my work</p>
+            <div className="mt-5 mb-4">
+                {filterButtons.map(item => <Button
+                    variant="outline-dark"
+                    className="m-1 mb-2"
+                    role="button"
+                    onClick={() => filterProjects(item.toLowerCase())}>{item}</Button>)}
+            </div>
+            <Row xs={1} md={2} xl={3} className="justify-content-center row-project-cards g-4">
+                {projectsList.map(item => (
+                    <Col className="card-group">
+                        <Card key={item.id} className="card-project">
+                            <ProjectCarousel images={item.images} />
+                            <Card.Body className="mt-3">
+                                <Card.Subtitle className="mb-3">{item.subtitle}</Card.Subtitle>
+                                <Card.Text>
+                                    <p className="mb-3 card-technology">{item.technology}</p>
+                                </Card.Text>
+                                {item.demoLink &&
                                     <Button
                                         className="m-1 mb-2"
                                         size="sm"
                                         variant="outline-dark"
                                         href={item.demoLink}
-                                        target="_blank" rel="noopener noreferrer">Demo</Button>
+                                        target="_blank" rel="noopener noreferrer">Demo</Button>}
+                                {item.codeLink &&
                                     <Button
                                         className="m-1 mb-2"
                                         size="sm"
@@ -72,30 +74,30 @@ const ProjectsSection = () => {
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         Code<ImGithub className="icon-viewcode" />
-                                    </Button>
-                                    <Button
-                                        className="m-1 mb-2"
-                                        size="sm"
-                                        variant="outline-dark"
-                                        onClick={() => {
-                                            setModalShow(true);
-                                            setCurrentProject(item);
-                                        }}>Details</Button>
-                                </Card.Body>
-                        <ProjectModal
-                            show={modalShow}
-                            onHide={() => setModalShow(false)}
-                            content={currentProject}
-                        />
-                    </Card>
-                    </Col>              
-            ))}
-        </Row>
-        <p className="more-projects">View more projects
-            <a href="https://github.com/NatalliaA" target="_blank" rel="noopener noreferrer">
-                <ImGithub className="icon-view-more" />
-            </a>
-        </p>
+                                    </Button>}
+                                <Button
+                                    className="m-1 mb-2"
+                                    size="sm"
+                                    variant="outline-dark"
+                                    onClick={() => {
+                                        setModalShow(true);
+                                        setCurrentProject(item);
+                                    }}>Details</Button>
+                            </Card.Body>
+                            <ProjectModal
+                                show={modalShow}
+                                onHide={() => setModalShow(false)}
+                                content={currentProject}
+                            />
+                        </Card>
+                    </Col>
+                ))}
+            </Row>
+            <p className="more-projects">View more projects
+                <a href="https://github.com/NatalliaA" target="_blank" rel="noopener noreferrer">
+                    <ImGithub className="icon-view-more" />
+                </a>
+            </p>
         </Container>
     </section>
 };

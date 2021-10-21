@@ -75,7 +75,43 @@ const aboutDetails = [
 
 const projects = [ 
     {
+        id: "0",
+        images: [
+            "images/center1.jpg",
+            "images/center2.jpg",
+            "images/center3.jpg",
+            "images/center4.jpg",
+            "images/center5.jpg",
+            "images/center6.jpg"
+        ],
+        title: "Colorado Russian Center",
+        subtitle: "Website for Colorado Russian Center ",
+        technology: "HTML5 | CSS3 | Bootstarp | JavaScript",
+        description: ["Designed and developed a website for a nonprofit organization",
+            "Website includes pages about school, classes, teachers, tuition, contact, etc.",
+            "Styling with Bootstrap's components (carousel, accordeon, modal, card, etc.)"],
+        demoLink: "https://www.coloradorussiancenter.org/",
+        codeLink: ""
+    },
+    {
         id: "1",
+        images: [
+            "images/portfolio1.jpg",
+            "images/portfolio2.jpg",
+            "images/portfolio3.jpg",
+            "images/portfolio4.jpg",
+            "images/portfolio5.jpg"
+        ],
+        title: "Portfolio",
+        subtitle: "Portfolio Site",
+        technology: "HTML5 | CSS3 | React | React-Bootstrap",
+        description: ["Single-page application implemented with React.js and React Hooks",
+            "Responsive layout styled with react-bootstrap"],
+        demoLink: "",
+        codeLink: "https://github.com/NatalliaA/portfolio"
+    },
+    {
+        id: "2",
         images: [
             "images/coding1.jpg",
             "images/coding2.jpg",
@@ -85,7 +121,7 @@ const projects = [
             "images/coding6.jpg"
         ],
         title: "Coding Books",
-        subtitle: "Single-page application for filtering books",
+        subtitle: "Single-Page Website for Filtering Books",
         technology: "HTML5 | CSS3 | CSS Grid | React.js | React Hooks",
         description: ["Single-page application implemented with React.js and React Hooks",
             "Navigation bar implemented with React Router",
@@ -94,7 +130,7 @@ const projects = [
         codeLink: "https://github.com/NatalliaA/coding-kids-react/tree/master"
     },
     {
-        id: "2",
+        id: "3",
         images: [
             "images/art1.jpg",
             "images/art2.jpg",
@@ -104,7 +140,7 @@ const projects = [
             "images/art6.jpg"
         ],
         title: "WeSeeArt",
-        subtitle: "Website with user-generated content",
+        subtitle: "Website Project with User-Generated Content",
         technology: "HTML5 | CSS3 | Bootstrap | Node.js | Express.js | MongoDB",
         description: ["Server-side implementation with Node.js and Express.js",
             "CRUD operations for user posts and comments",
@@ -115,14 +151,14 @@ const projects = [
         codeLink: "https://github.com/NatalliaA/art-network-node"
     },
     {
-        id: "5",
+        id: "4",
         images: [
             "images/shakes1.jpg",
             "images/shakes2.jpg",
             "images/shakes3.jpg"
         ],
         title: "Milkshakes",
-        subtitle: "Webpage for searching milkshakes",
+        subtitle: "Webpage for Searching Milkshakes",
         technology: "HTML5 | CSS3 | CSS Grid | React.js | REST API",
         description: ["Single-page application implemented with React.js",
             "Framework-free styling and responsive layout with CSS Grid",
@@ -131,7 +167,7 @@ const projects = [
         codeLink: "https://github.com/NatalliaA/shakes-react"
     },
     {
-        id: "3",
+        id: "5",
         images: [
             "images/cart1.jpg",
             "images/cart2.jpg",
@@ -139,7 +175,7 @@ const projects = [
             "images/cart4.jpg"
         ],
         title: "Shopping Cart",
-        subtitle: "Responsive shopping cart",
+        subtitle: "Shopping Cart",
         technology: "HTML5 | CSS3 | CSS Grid | React.js | Redux",
         description: ["Project implemented with React.js and Redux",
             "User can add or remove health classes from the cart",
@@ -149,7 +185,7 @@ const projects = [
         codeLink: "https://github.com/NatalliaA/shopping-cart-react/tree/master"
     },
     {
-        id: "4",
+        id: "6",
         images: [
             "images/school1.jpg",
             "images/school2.jpg",
@@ -158,7 +194,7 @@ const projects = [
             "images/school5.jpg"
         ],
         title: "Lesson with Quiz",
-        subtitle: "Online multimedia lesson",
+        subtitle: "Online Multimedia Lesson",
         technology: "HTML5 | CSS3 | Bootstrap | JavaScript | jQuery",
         description: ["Capital city quiz with sound effects using jQuery",
             "Responsive layout with Bootstrap's grid system",
@@ -167,7 +203,7 @@ const projects = [
         codeLink: "https://github.com/NatalliaA/NatalliaA.github.io/tree/master/school"
     },    
     {
-        id: "0",
+        id: "7",
         images: [
             "images/np1.jpg",
             "images/np2.jpg",
@@ -179,7 +215,7 @@ const projects = [
             "images/np8.jpg"
         ],
         title: "Nature in California",
-        subtitle: "Responsive photo gallery website",
+        subtitle: "Photo Gallery Website",
         technology: "HTML5 | CSS3 | CSS Grid | JavaScript | Google Maps API | Social APIs",
         description: [
             "Framework-free styling and responsive layout with CSS Grid",
@@ -191,7 +227,7 @@ const projects = [
         codeLink: "https://github.com/NatalliaA/nature-california"
     },
     {
-        id: "6",
+        id: "8",
         images: [
             "images/cities1.jpg",
             "images/cities2.jpg",
@@ -200,7 +236,7 @@ const projects = [
             "images/cities5.jpg"
         ],
         title: "Travel & Learn",
-        subtitle: "Webpage with a distance calculator",
+        subtitle: "Webpage with a Distance Calculator",
         technology: "HTML5 | CSS3 | CSS Grid | JavaScript | Google Maps API",
         description: ["Framework-free styling and responsive layout with CSS Grid",
             "Distance calculator implemented with jQuery and Google Maps API",
@@ -209,14 +245,14 @@ const projects = [
         codeLink: "https://github.com/NatalliaA/top-us-cities"
     },
     {
-        id: "7",
+        id: "9",
         images: [
             "images/qa1.jpg",
             "images/qa2.jpg",
             "images/qa3.jpg"
         ],
         title: "Q&A",
-        subtitle: "Webpage with Q&A collapsibles",
+        subtitle: "Webpage with Q&A Collapsibles",
         technology: "HTML5 | CSS3 | CSS Grid | React.js | React Hooks",
         description: ["Q&A component with React useState hook",
             "Collapsible accordion to show/hide answers",
@@ -225,7 +261,7 @@ const projects = [
         codeLink: "https://github.com/NatalliaA/q-a-react"
     },
     {
-        id: "8",
+        id: "10",
         images: [
             "images/multiplication1.jpg",
             "images/multiplication2.jpg",
@@ -233,7 +269,7 @@ const projects = [
             "images/multiplication4.jpg"
         ],
         title: "Multiplication Game",
-        subtitle: "Interactive game",
+        subtitle: "Interactive Multiplication Game",
         technology: "HTML5 | CSS3 | JavaScript",
         description: ["Interactive game with sound effects, timer, and score implemented with JavaScript",
             "Framework-free styling and responsive layout with CSS media queries"],
