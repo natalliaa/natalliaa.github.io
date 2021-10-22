@@ -104,7 +104,7 @@ const projects = [
         ],
         title: "Portfolio",
         subtitle: "Portfolio Site",
-        technology: "HTML5 | CSS3 | React | React-Bootstrap",
+        technology: "HTML5 | CSS3 | React.js | React-Bootstrap",
         description: ["Single-page application implemented with React.js and React Hooks",
             "Responsive layout styled with react-bootstrap"],
         demoLink: "",

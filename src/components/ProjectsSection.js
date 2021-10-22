@@ -3,6 +3,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 import { Container } from 'react-bootstrap';
 import ProjectModal from './ProjectModal';
 import SectionHeader from './SectionHeader';
@@ -13,7 +15,8 @@ import { ImGithub } from 'react-icons/im';
 const ProjectsSection = () => {
 
 
-    const [projectsList, setProjectsList] = useState(projects);
+    const [projectsList, setProjectsList] = useState(projects.slice(0, 3));
+    const [showMore, setShowMore] = useState(true);
     const [modalShow, setModalShow] = useState(false);
     const [currentProject, setCurrentProject] = useState(
         {
@@ -27,9 +30,21 @@ const ProjectsSection = () => {
             codeLink: ""
         });
 
+    const handleShowMore = () => {
+        if (showMore) {
+            setProjectsList(projects);
+            setShowMore(!showMore);
+        }
+        else {
+            setProjectsList(projects.slice(0, 3));
+            setShowMore(!showMore);
+        }
+    }
+
     const filterProjects = (str) => {
         if (str === 'all projects') {
             setProjectsList(projects);
+            setShowMore(false);
         }
         else {
             const filteredProjects = projects.filter(item => item.technology.toLowerCase().includes(str));
@@ -39,15 +54,12 @@ const ProjectsSection = () => {
 
     return <section id="projects" className="projects">
         <Container>
-            <SectionHeader className="mb-0">PROJECTS</SectionHeader>
-            <p>Selected examples of my work</p>
-            <div className="mt-5 mb-4">
-                {filterButtons.map(item => <Button
-                    variant="outline-dark"
-                    className="m-1 mb-2"
-                    role="button"
-                    onClick={() => filterProjects(item.toLowerCase())}>{item}</Button>)}
-            </div>
+            <SectionHeader>PROJECTS</SectionHeader>
+            <DropdownButton id="dropdown-basic-button" variant="outline-dark" title="Filter Projects">
+                {filterButtons.map(item => <Dropdown.Item
+                    as="button"
+                    onClick={() => filterProjects(item.toLowerCase())}>{item}</Dropdown.Item>)}
+            </DropdownButton>
             <Row xs={1} md={2} xl={3} className="justify-content-center row-project-cards g-4">
                 {projectsList.map(item => (
                     <Col className="card-group">
@@ -91,13 +103,22 @@ const ProjectsSection = () => {
                             />
                         </Card>
                     </Col>
-                ))}
+                )
+                )}
             </Row>
-            <p className="more-projects">View more projects
-                <a href="https://github.com/NatalliaA" target="_blank" rel="noopener noreferrer">
-                    <ImGithub className="icon-view-more" />
-                </a>
-            </p>
+            <Button
+                className="mt-5 mb-2"
+                size="md"
+                variant="outline-dark"
+                onClick={handleShowMore}>{showMore ? "Show More" : "Show Less"}</Button>
+
+            {!showMore &&
+                <p className="more-projects">View more projects on GitHub
+                    <a href="https://github.com/NatalliaA" target="_blank" rel="noopener noreferrer">
+                        <ImGithub className="icon-view-more" />
+                    </a>
+                </p>
+            }
         </Container>
     </section>
 };
