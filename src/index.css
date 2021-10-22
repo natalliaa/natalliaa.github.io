@@ -125,6 +125,10 @@ img.intro-image {
   font-size: 1.2em;
 }
 
+.dropdown-menu {
+  min-width: 8.3rem !important;
+}
+
 /* Icons */
 
 .media-icon-contact, .icon-contact-small {
