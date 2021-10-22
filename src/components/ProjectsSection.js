@@ -55,7 +55,7 @@ const ProjectsSection = () => {
     return <section id="projects" className="projects">
         <Container>
             <SectionHeader>PROJECTS</SectionHeader>
-            <DropdownButton id="dropdown-basic-button" variant="outline-dark" title="Filter Projects" className="mt-0 mb-4">
+            <DropdownButton id="dropdown-basic-button" variant="outline-dark" title="Filter Projects" className="mt-0 mb-5">
                 {filterButtons.map(item => <Dropdown.Item
                     as="button"
                     onClick={() => filterProjects(item.toLowerCase())}>{item}</Dropdown.Item>)}
