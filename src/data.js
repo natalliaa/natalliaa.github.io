@@ -2,7 +2,7 @@ const introDetails = {
     image: "images/natallia.jpg",
     name: "Natallia Akulenka",
     profession: "Web Design & Development",
-    message: "Hi! I am a junior web developer looking for a new role. My expertise is in designing and developing user-friendly web applications using modern technologies: HTML, CSS, Bootstrap, React, JavaScript, ES6, and Node.js. Next to my technical competencies, I have great communication skills from my former career as a world language teacher. My other passions include ultramarathons, hiking, and traveling. Have a look at some of my projects and get in touch with me!"
+    message: "Hi! I am a junior web developer looking for a new role. My expertise is in designing and developing user-friendly web applications using modern technologies: HTML, CSS, Bootstrap, React, JavaScript, ES6, and Node.js. Next to my technical competencies, I have great communication skills from my former career as a world language teacher. My other passions include ultramarathons, hiking, and traveling. Have a look at some of my projects and get in touch with me. I am located near Boulder in Colorado and open to work remotly."
 };
 
 const skills = [
@@ -24,7 +24,7 @@ const skills = [
     {
         id: "3",
         title: "DEPLOY",
-        text: "GitHub| Heroku | Netlify | GoDaddy"
+        text: "GitHub Pages | Heroku | Netlify | GoDaddy"
     }
 ];
 
