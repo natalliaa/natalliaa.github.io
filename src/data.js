@@ -108,7 +108,7 @@ const projects = [
         description: ["Single-page application implemented with React.js and React Hooks",
             "Responsive layout styled with react-bootstrap"],
         demoLink: "",
-        codeLink: "https://github.com/NatalliaA/portfolio"
+        codeLink: "https://github.com/natalliaa/natalliaa.github.io"
     },
     {
         id: "2",
@@ -127,7 +127,7 @@ const projects = [
             "Navigation bar implemented with React Router",
             "Framework-free styling and responsive layout with CSS Grid"],
         demoLink: "https://natalliaa.github.io/coding-kids-react",
-        codeLink: "https://github.com/NatalliaA/coding-kids-react/tree/master"
+        codeLink: "https://github.com/natalliaa/coding-kids-react/tree/master"
     },
     {
         id: "3",
@@ -148,7 +148,7 @@ const projects = [
             "Users' images stored in the cloud with Cloudinary API",
             "User authentication (credentials, password reset, etc.) with Passport.js and Nodemailer"],
         demoLink: "https://streetart-boulder.herokuapp.com",
-        codeLink: "https://github.com/NatalliaA/art-network-node"
+        codeLink: "https://github.com/natalliaa/art-network-node"
     },
     {
         id: "4",
@@ -164,7 +164,7 @@ const projects = [
             "Framework-free styling and responsive layout with CSS Grid",
             "Milkshake data fetched from a third-party API (TheCocktailDB)"],
         demoLink: "https://natalliaa.github.io/shakes-react",
-        codeLink: "https://github.com/NatalliaA/shakes-react"
+        codeLink: "https://github.com/natalliaa/shakes-react"
     },
     {
         id: "5",
@@ -182,7 +182,7 @@ const projects = [
             "The total amount of classes and fees are displayed",
             "Framework-free styling and responsive layout with CSS Grid"],
         demoLink: "https://natalliaa.github.io/shopping-cart-react",
-        codeLink: "https://github.com/NatalliaA/shopping-cart-react/tree/master"
+        codeLink: "https://github.com/natalliaa/shopping-cart-react/tree/master"
     },
     {
         id: "6",
@@ -200,7 +200,7 @@ const projects = [
             "Responsive layout with Bootstrap's grid system",
             "Styling with Bootstrap's components (carousel, card, embed, etc.)"],
         demoLink: "school/index.html",
-        codeLink: "https://github.com/NatalliaA/NatalliaA.github.io/tree/master/school"
+        codeLink: "https://github.com/natalliaa/online-school-jsquiz"
     },    
     {
         id: "7",
@@ -224,7 +224,7 @@ const projects = [
             "Tweet button with a timeline of National Park Service updates with Twitter API."
         ],
         demoLink: "nature/index.html",
-        codeLink: "https://github.com/NatalliaA/nature-california"
+        codeLink: "https://github.com/natalliaa/nature-california"
     },
     {
         id: "8",
@@ -242,7 +242,7 @@ const projects = [
             "Distance calculator implemented with jQuery and Google Maps API",
             "Display of the distance calculation results and the route on an embedded map"],
         demoLink: "cities/index.html",
-        codeLink: "https://github.com/NatalliaA/top-us-cities"
+        codeLink: "https://github.com/natalliaa/top-us-cities"
     },
     {
         id: "9",
@@ -258,7 +258,7 @@ const projects = [
             "Collapsible accordion to show/hide answers",
             "Framework-free styling and responsive layout with CSS Grid"],
         demoLink: "https://natalliaa.github.io/q-a-react",
-        codeLink: "https://github.com/NatalliaA/q-a-react"
+        codeLink: "https://github.com/natalliaa/q-a-react"
     },
     {
         id: "10",
@@ -274,7 +274,7 @@ const projects = [
         description: ["Interactive game with sound effects, timer, and score implemented with JavaScript",
             "Framework-free styling and responsive layout with CSS media queries"],
         demoLink: "multiplication/index.html",
-        codeLink: "https://github.com/NatalliaA/multiplication-game"
+        codeLink: "https://github.com/natalliaa/multiplication-game"
     }
 ];
 
