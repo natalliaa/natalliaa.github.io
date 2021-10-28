@@ -4,20 +4,22 @@ body {
   margin-top: 3em;
 }
 
-p{
-  font-family: 300;
-}
-
 .btn, .card, .navbar-toggler, .card-img, .card-img-top {
   border-radius: 0% !important;
 }
 
+p{
+  font-weight: 400 !important;
+  color: rgba(0, 0, 0, 0.7)
+}
+
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .nav-link {
   color: rgba(255, 255, 255, 0.9) !important;
+  letter-spacing: 0.5px;
 }
 
 .nav-link:hover {
@@ -68,6 +70,7 @@ img.intro-image {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
+  font-size: 1.8em;
 }
 
 .my-profession {
@@ -89,6 +92,11 @@ img.intro-image {
 .card-subtitle {
   font-size: 0.9em;
   margin-top: 0!important;
+}
+
+.card-text{
+  font-family: 300 !important;
+    font-size: 0.85em;
 }
 
 .card-technology {
@@ -180,7 +188,9 @@ a:hover .icon-contact-small {
 #footer {
   background-color: rgba(0, 0, 0, 0.6);
   font-size: 0.9em;
-  color: white;
+}
+#footer p{
+  color: white !important;
 }
 
 /* XS devices (portrait phones, less than 576px) */
