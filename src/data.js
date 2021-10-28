@@ -24,7 +24,7 @@ const skills = [
     {
         id: "3",
         title: "DEPLOY",
-        text: "GitHub Pages | Heroku | Netlify | GoDaddy"
+        text: "SEO | GoDaddy | GitHub Pages | Heroku | Netlify"
     }
 ];
 

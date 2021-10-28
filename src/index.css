@@ -4,6 +4,10 @@ body {
   margin-top: 3em;
 }
 
+p{
+  font-family: 300;
+}
+
 .btn, .card, .navbar-toggler, .card-img, .card-img-top {
   border-radius: 0% !important;
 }
@@ -59,7 +63,7 @@ img.intro-image {
 }
 
 .my-name {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
   box-shadow: 0.1em 0.2em 0.1em rgba(25, 53, 80, 0.3);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
