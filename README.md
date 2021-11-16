@@ -1,9 +1,11 @@
 # Portfolio
 ## Natallia Akulenka | Web Design & Development
 
-Hi, I am Natallia! 
 
-My expertise is in designing and developing responsive and user-friendly web applications and websites. I have a MS in Computer Science and MA in German. Next to my technical competencies, I have great communication skills from my former language teaching career. My other passions include ultramarathons, hiking, and traveling.
+### View Live
+<https://natalliaa.github.io/>
+
+Hi! I am a junior web developer looking for a new role. My expertise is in designing and developing user-friendly web applications using modern technologies: HTML, CSS, Bootstrap, React, JavaScript, ES6, and Node.js. Next to my technical competencies, I have great communication skills from my former career as a world language teacher. My other passions include ultramarathons, hiking, and traveling. Have a look at some of my projects and get in touch with me. I am located near Boulder in Colorado and open to work remotely.
 
 ## Skills
 ### DESIGN
